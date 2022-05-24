@@ -37,6 +37,23 @@ export default function App () {
 
   }
 
+  const checkWallet = async () => {
+    try {
+
+      const {ethereum} = window
+
+      if(ethereum){
+        const accounts = await ethereum.request({method: "eth_accounts"})
+        console.log(accounts)
+      } else{
+        console.log("Error: ", ethereum)
+      }
+
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   useEffect(() => {
     checkIfWalletIsConnect()
   },[])
@@ -48,7 +65,7 @@ export default function App () {
       <div>
         <h2>Profile Account: {currentAccount}</h2>
       </div>
-      <button className="waveButton" onClick={null}>
+      <button className="waveButton" onClick={checkWallet}>
           Wave at Me
       </button>
 
