@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/deWave2/static/css/main.1eda5731.css",
+    "main.js": "/deWave2/static/js/main.22d4bba2.js",
+    "index.html": "/deWave2/index.html",
+    "main.1eda5731.css.map": "/deWave2/static/css/main.1eda5731.css.map",
+    "main.22d4bba2.js.map": "/deWave2/static/js/main.22d4bba2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1eda5731.css",
+    "static/js/main.22d4bba2.js"
+  ]
+}
